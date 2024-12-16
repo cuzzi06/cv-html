@@ -42,6 +42,7 @@ The project includes support for dark mode:
 
 1. Clone the repository or download the project files.
 2. Open the `index.html` file in any modern web browser.
+3. Alternatively, view the project live at: [Project URL](https://roadmap.sh/projects/single-page-cv)
 
 ## Future Improvements
 
