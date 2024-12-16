@@ -18,7 +18,12 @@ body {
 }
 
 .label {
-  font-size: 15px;
   color: rgb(80, 173, 80);
-  margin: 20px 0;
+  margin: 20px 0 8px 0;
+}
+
+h2,
+h3,
+p {
+  font-size: 15px;
 }
