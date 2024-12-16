@@ -1,29 +1,90 @@
+:root {
+  --primary-color: rgb(80, 173, 80);
+  --secondary-color: rgb(3, 119, 242);
+  --border-color: black;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 body {
   margin: 0 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.resume {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 20px 0;
+  height: calc(100vh - 40px);
+  width: 100%;
+  max-width: 600px;
+  min-width: 320px;
+}
+
+hr {
+  height: 7px;
+  width: 70%;
+  background-color: var(--border-color);
+  border: 0;
+  border-radius: 10px;
 }
 
 .name {
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 20px 0;
 }
 
 .label {
-  color: rgb(80, 173, 80);
-  margin: 20px 0 8px 0;
+  color: var(--primary-color);
+  margin: 20px 0 10px 0;
 }
 
 h2,
 h3,
 p {
   font-size: 15px;
+  line-height: 1.5;
+}
+
+.colegio > h3,
+.universidad > h3 {
+  color: var(--secondary-color);
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 0 10px;
+  }
+
+  .resume {
+    padding: 20px;
+    height: auto;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  h2,
+  h3,
+  p {
+    font-size: 13px;
+  }
 }
